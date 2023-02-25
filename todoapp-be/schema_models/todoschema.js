@@ -11,6 +11,7 @@ const todoSchema = new schema({
 });
 
 //compiling schema in model
-const Todo = mongoose.model("userdatas", todoSchema);
+//in first parameter define database collection name
+const Todo = mongoose.model("lists", todoSchema);
 
 module.exports = Todo;
